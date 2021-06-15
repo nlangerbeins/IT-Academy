@@ -1,0 +1,198 @@
+@import url('https://fonts.googleapis.com/css2?family=Roboto+Mono:wght@300&display=swap');
+
+.header {
+    border-bottom: 5px double #e2676a;
+    background-color: #727273;
+    color: white;
+}
+
+.header__logo {
+    display: inline-block;
+    margin: 20px 90px 10px 90px;
+    height: 60px;
+}
+
+.header__slogan {
+    display: inline-block;
+    margin: 20px 20px 10px 40px;
+    width: 500px;
+    height: 60px;
+    box-sizing: border-box;
+    font-family: 'Roboto Mono', monospace;
+    font-size: 20px;
+    text-align: center;
+    font-weight: bold;
+}
+
+.header__phone {
+    display: inline-block;
+    font-family: 'Roboto Mono', monospace;
+    margin: 20px 60px 10px 80px;
+    float: right;
+    font-size: 18px;
+    height: 60px;
+    font-weight: bold;
+}
+
+.header__phone_vod, .header__phone_tel {
+    padding-top: 10px; 
+}
+
+.header__slogan_1, .header__slogan_2 {
+    margin: 0px;
+    line-height: 30px;
+}
+
+/* Navigation */
+
+.nav {
+    font-size: 20px;
+    font-family: 'Roboto Mono', monospace;
+    padding: 20px;
+    text-transform: uppercase;
+    background-color: #fff;
+    font-weight: bold;
+}
+
+.nav__main, .nav__contact {
+    display: inline-block;
+    margin-right: 10px;
+    padding-right: 20px;
+    border-right: 2px solid grey;
+    
+}
+
+.nav__main {
+    margin-left: 30px;
+}
+
+/* Main content */
+
+.main {
+    height: 620px;
+    background-color: #a7b7c0;
+    /*display: block;
+    text-align: center;*/
+}
+
+/* contacts.html */
+.page__title_wrapper {
+    margin-top: 30px;
+    margin-bottom: 30px;
+}
+
+.page__title {
+    margin: 0;
+    color:#ffffff;
+    text-align: center;
+    font-size: 30px;
+    font-family: 'Roboto Mono', monospace;
+}
+
+.contact-form {
+    margin-left: 300px;
+    border: 5px double #e2676a;
+    width: 50%;
+}
+
+.contact-form__header {
+    font-size: 22px;
+    font-weight: bold;
+    letter-spacing: 2px;
+    margin-left: 160px;
+}
+
+/* Salutation */
+.contact-form__salutation {
+    display: flex;
+    margin: 20px 0 20px 0;
+}
+
+.contact-form__salutation_male,  .contact-form__salutation_female, .contact-form__salutation_unknown {
+    margin-right: 30px;    
+}
+
+/* First Name, Last Name, E-Mail, Mobile Phone */
+.cf__name-first_label, 
+.cf__name-last_label, 
+.cf__email_label, 
+.cf__phone_label, 
+.cf__birthdate_label {
+    margin-bottom: 5px;
+}
+
+.cf_flag{
+    color: #ff0000;
+}
+
+.cf__name-first_input, 
+.cf__name-last_input, 
+.cf__email_input, 
+.cf__phone_input {
+    margin-bottom: 20px;
+}
+
+.cf__birthdate_container {
+    display: flex;
+}
+
+.cf__birthdate_day, .cf__birthdate_month {
+    margin-right: 15px;
+}
+
+.contact-form__button {
+    text-align: center;
+}
+
+.cf__submit, .cf__reset {
+    display: inline-block;
+    margin: 20px;
+
+}
+/* main.html */
+.about_wrapper {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+}
+
+.about { 
+    width: 300px;
+    height: 400px;
+    margin-top: 40px;
+}
+
+.about__img {
+    padding-bottom: 40px;
+    padding-top: 40px;
+}
+
+.about__txt {
+    text-align: center;
+}
+
+
+/* Footer */
+.nav__footer {
+    font-family: 'Roboto Mono', monospace;;
+    text-transform: uppercase;
+    font-weight: bold;
+    font-size: 18px;
+    margin: 0;
+}
+
+.nav__footer_main, .nav__footer_contact {
+    margin-top: 20px;
+}
+
+.nav__footer_contact {
+    margin-bottom: 30px;
+}
+
+.nav__footer {
+    list-style-type: none;
+}
+
+.footer__info {
+    text-align: center;
+}
