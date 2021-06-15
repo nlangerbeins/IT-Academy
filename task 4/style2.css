@@ -1,0 +1,40 @@
+.ramka-top {
+    background: url(/ramka-top.png) repeat-x top;
+}
+
+.ramka-bottom {
+    background: url(/ramka-bottom.png) repeat-x bottom;
+}
+
+.ramka-right {
+    background: url(/ramka-right.png) repeat-y right;
+}
+
+.ramka-left {
+    background: url(/ramka-left.png) repeat-y left;
+}
+
+.ramka-top-left {
+    background: url(/ramka-top-left.png) no-repeat left top;
+}
+
+.ramka-top-right {
+    background: url(/ramka-top-right.png) no-repeat right top;
+}
+
+.ramka-bottom-left {
+    background: url(/ramka-bottom-left.png) no-repeat left bottom;
+}
+
+.ramka-bottom-right {
+    background: url(/ramka-bottom-right.png) no-repeat right bottom;
+}
+
+.ramka-content {
+    height: 300px;
+    line-height: 180%;
+    padding: 60px 60px 30px 50px; 
+    text-align: center;
+    position: relative;
+}
+
