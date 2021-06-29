@@ -1,0 +1,64 @@
+/* Method 1 
+Разделители сделаны через правую часть рамки. После пятой ссылки разделитель 
+убран с помощью a:last-child
+*/
+
+.method1 a {
+    border-right: 3px solid #ff0000;
+    padding: 10px 20px;
+    color: #008000;
+}
+
+.method1 a:last-child {
+    border-right: none;
+}
+
+.method1 a:first-child {
+    padding-left: 0px;
+}
+
+.method1 a:hover {
+    color: #ff0000;
+}
+
+.method1 {
+    padding: 20px 0;
+}
+
+/* Method 2 
+Разделители сделаны через левую часть рамки. Пeред первой ссылкой разделитель 
+убран с помощью ul:first-child
+*/
+
+ul, li, .method2 ul li a {
+    margin: 0;
+    padding: 0;
+}
+
+.method2 {
+    padding: 20px 0;
+}
+
+.method2 ul {
+    display: inline-block;
+    list-style-type: none;
+}
+
+.method2 ul li a {
+    border-left: 3px solid #ff0000;
+    padding: 10px 20px;
+    color: #008000;
+}
+
+.method2 ul li a:hover {
+    color: #ff0000;
+}
+
+.method2 ul:first-child li a {
+    border-left: none;
+    padding-left: 0px;
+    margin-left: -3px;
+}
+
+
+

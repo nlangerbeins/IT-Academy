@@ -1,0 +1,14 @@
+span {
+    position: relative;
+    color: #ff0000;
+    font-size: 50px;
+    unicode-bidi: bidi-override;
+    direction: rtl;
+}
+
+span:hover::before,
+span:hover ~ span::before {
+    content: "\2605";
+    color: #ff0000;
+    position: absolute;
+}
