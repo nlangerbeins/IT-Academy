@@ -1,0 +1,88 @@
+@import url('https://fonts.googleapis.com/css2?family=Roboto+Mono:wght@300&display=swap');
+
+* {
+    margin: 0;
+}
+
+table, tr, td {
+    border-collapse: collapse;
+}
+
+.table {
+    width: 100%;
+}
+
+.header, .footer {
+    background-color: #488fbe;
+    padding: 15px 0;
+}
+
+.header__header, .footer__header {
+    font-size: 40px;
+    text-transform: uppercase;
+    text-align: center;
+    color: #1313a3;
+    font-family: 'Roboto Mono', monospace;
+}
+
+.main {
+    background: #d6cb39;
+}
+
+.nav {
+    width: 300px;
+    padding: 20px;
+    box-sizing: border-box;
+    line-height: 30px;
+}
+
+.nav__header {
+    padding: 10px;
+    text-align: center;
+}
+
+.section {
+    background-color: #ffffff;
+    margin-left: 310px;
+    padding: 20px;
+    box-sizing: border-box;
+    position: relative;
+}
+
+.section::before {
+    content: "";
+    position: absolute;
+    background-image: url(/ball.png);
+    background-position: right;
+    background-size: 50px;
+    background-repeat: repeat-y;
+    top: 0px;
+    bottom: 0px;
+    right: 0px;
+    left: 0px;
+    opacity: 20%;
+}
+
+.section__header {
+    text-align: center;
+    padding-bottom: 20px;
+    text-transform: uppercase;
+}
+
+.section__content_img {
+    width: 300px;
+    float: left;
+    padding-right: 15px;
+}
+
+.section__content_text {
+    text-align: justify;
+}
+
+p:first-of-type {
+    margin-bottom: 15px;
+}
+
+a {
+    color: blue;
+}
