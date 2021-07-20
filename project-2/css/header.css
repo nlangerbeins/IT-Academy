@@ -1,0 +1,222 @@
+header {
+    background-color: #FCBF32;
+    width: 100%;
+} 
+
+/* Header top*/
+.header__top {
+    margin: 0px 6% 1%;
+    padding-top: 1%;
+    display: flex;
+    justify-content: space-between;
+}
+
+.ht__header {
+    font-size: 5vw;
+    letter-spacing: 2px;
+    color: #021126;
+}
+
+.ht__info {
+    display: flex;
+    justify-content: flex-end;
+    letter-spacing: 1px;
+}
+
+.ht__info_hours, .ht__info_tel, .ht__info_email {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+}
+
+.ht__info_tel, .ht__info_email {
+    margin-left: 6em;
+}
+
+.ht__info_hours_top, .ht__info_tel_top, .ht__info_email_top {
+    padding-bottom: 0.5em;
+    /*font-size: 1.3em;*/
+    font-size: 1.3vw;
+}
+
+.ht__info_hours_bottom, .ht__info_tel_bottom, .ht__info_email_bottom {
+    font-size: 1em;
+}
+
+.ht__info_img {
+    font-size: 3em;
+    padding-right: 0.5em;
+}
+
+/* Header bottom*/
+.header__bottom {
+    background-color: #021126;
+    margin: 0 6%;
+    padding: 2.5em 0;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    position: relative;
+}
+
+.hb__menu {
+    padding-left: 2.5em;
+    display: flex;
+}
+
+.hb__menu li {
+    padding-right: 1.3em;
+    text-transform: uppercase;
+    font-size: 1.2em;
+    letter-spacing: 1px;
+}
+
+.hb__menu a {
+    text-decoration: none;
+    color: white;
+}
+
+.hb__menu a:hover {
+    color: #FCBF32;
+    transition: all 0.5s;
+}
+
+.hb__menu_pages a::after {
+    font-family: "Font Awesome 5 Free";
+    font-weight: 900;
+    content: "\f0d7";
+    margin-left: 4px;
+}
+
+.hb__menu_home a {
+    color: #FCBF32;
+} 
+
+.hb__quote_button {
+    color: #ffffff;
+    border: 2px solid #ffffff;
+    padding: 1em;
+    font-size: 1.2em;
+    letter-spacing: 1px;
+    text-decoration: none;
+    margin-right: 1.3em;
+}
+
+.hb__quote_button:hover {
+    color: #FCBF32;
+    border: 2px solid #FCBF32;  
+    box-shadow: 3px 3px 2px rgba(207, 205, 200, 0.719);
+} 
+
+/*----При разрешении экрана меньше 830px---*/
+
+.hamburger_menu {
+    display: none;
+}
+
+/* скрываем чекбокс */
+#menu__toggle {
+    opacity: 0;
+}
+
+/* стилизуем кнопку */
+.menu__btn {
+    display: flex; 
+    align-items: center; 
+    position: absolute;
+    top: 2em;
+    left: 2em;
+    width: 30px;
+    height: 30px;
+    cursor: pointer;
+    z-index: 3;
+}
+
+/* добавляем "гамбургер" */
+.menu__btn > span,
+.menu__btn > span::before,
+.menu__btn > span::after {
+    display: block;
+    position: absolute;
+    width: 100%;
+    height: 3px;
+    background-color:#ffffff;
+    z-index: 3;
+}
+
+.menu__btn > span::before {
+    content: '';
+    top: -10px;
+}
+
+.menu__btn > span::after {
+    content: '';
+    top: 10px;
+}
+
+/* контейнер меню */
+.menu__box {
+    display: block;
+    position: absolute;
+    visibility: hidden;
+    z-index: 2;
+    top: 77px;
+    left: -100%;
+    width: 200px;
+    height: auto;
+    margin: 0;
+    padding: 1em 0;
+    list-style: none;
+    background-color:  #021126;
+    box-shadow: 3px 3px 5px #FCBF32;
+}
+  
+/* элементы меню */
+.menu__item {
+    display: block;
+    padding: 1em 1.5em;
+    color: #ffffff;
+    font-size: 1.4em;
+    text-transform: uppercase;
+    letter-spacing: 1px;
+    text-decoration: none;
+}
+
+.menu__item:hover {
+    color: #FCBF32;
+    background-color: hsl(215, 35%, 28%);
+} 
+
+.menu__item_pages::after {
+    font-family: "Font Awesome 5 Free";
+    content: "\f0da";
+    font-weight: 900;
+    padding-left: 0.5em;
+}
+
+#menu__toggle:checked ~ .menu__btn > span {
+    transform: rotate(45deg);
+}
+
+#menu__toggle:checked ~ .menu__btn > span::before {
+    top: 0;
+    transform: rotate(0);
+}
+
+#menu__toggle:checked ~ .menu__btn > span::after {
+    top: 0;
+    transform: rotate(90deg);
+}
+
+#menu__toggle:checked ~ .menu__box {
+    visibility: visible;
+    left: 0;
+}
+
+.menu__btn > span,
+.menu__btn > span::before,
+.menu__btn > span::after,
+.menu__box, 
+.menu__item  {
+    transition-duration: .25s;
+}

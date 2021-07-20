@@ -1,0 +1,188 @@
+.footer {
+    display: flex;
+    flex-direction: column;
+    background-color: #021126;
+    padding: 6% 0 3%;
+}
+
+.footer__top {
+    display: flex;
+    justify-content: space-between;
+    margin: 0 6%;
+}
+
+.footer__top_block {
+    width: 23%;
+    display: flex;
+    flex-direction: column;
+}
+
+.footer__top_block h3 {
+    font-size: 1.7em;
+    color:#FCBF32;
+    padding-bottom: 0.8em;
+    position: relative;
+}
+
+.footer__top_block h3:after {
+    content: "";
+    position: absolute;
+    border-bottom: 2px solid #FCBF32;
+    width: 30%;
+    left: 0;
+    bottom: 0;
+}
+
+.ft_block__row {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    color: #ffffff;
+    font-size: 1.4em;
+    padding: 0.5em 0;
+}
+
+.ft_block__row a {
+    text-decoration: none;
+    color: #ffffff;
+}
+
+.ft_block__row:hover {
+    color: #FCBF32;
+}
+
+.ft_block__row:hover a {
+    color: #FCBF32;
+}
+
+.ft_block__row:first-of-type {
+    margin-top: 0.7em;
+}
+
+.footer__icon {
+    padding-right: 0.5em;
+}
+
+.ft_block__icons {
+    display: flex;
+}
+
+.ft_block__icons div {
+    border: 1px solid hsl(240, 3%, 30%);
+    border-radius: 50%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 3em;
+    height: 3em;
+    margin: 1em 0.5em 0 0;
+}
+
+.footer_icons_social {
+    font-size: 1.1em;
+    color: #ffffff;
+}
+
+.ft_block__icons div:hover {
+    border: 1px solid #FCBF32;
+    transform: scale(1.2, 1.2);
+    transition: transform 0.5s;
+}
+
+.ft__block_form form {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    background-color: #ffffff;
+}
+
+.ft__block_form p {
+    font-size: 1.4em;
+    line-height: 1.4em;
+    margin: 0.7em 0 1.5em;
+    padding: 0.5em 0;
+    color: #ffffff;
+}
+
+[type="email"] {
+    padding: 0.7em 0 0.7em 0.5em; 
+    font-size: 1.4em; 
+    flex-grow: 1;
+    border: none;
+    width: 100%;
+}
+
+.ft__block_form input:focus {
+    outline: none;
+}
+
+.ft__block_form button {
+    padding: 4%;
+    margin-right: 0.5%;
+    font-size: 1.2em; 
+    text-transform: uppercase;
+    color: #FCBF32;
+    border: 2px solid #FCBF32;
+    background-color: black;
+}
+
+.ft__block_form button:hover {
+    cursor: pointer;
+}
+
+/*--------Footer Middle----------*/
+
+.footer__middle {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-size: 1.4em;
+    margin: 3% 6%;
+    padding: 1em 0;
+    border-top: 1px solid hsl(240, 3%, 30%);
+    border-bottom: 1px solid hsl(240, 3%, 30%);
+}
+
+.footer__middle p {
+    padding: 0 1em;
+    border-left: 1px solid hsl(240, 3%, 30%);
+}
+
+.footer__middle p:first-child {
+    border-left: none;
+}
+
+.footer__middle a {
+    text-decoration: none;
+    color: #ffffff;
+}
+
+.footer__middle a:hover {
+    color: #FCBF32;
+    transition: all 0.5s;
+}
+
+/*--------Footer Bottom----------*/
+
+.footer__bottom {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    color: #ffffff;
+    font-size: 1.4em;
+    margin: 0 6%;
+}
+
+.fb__block {
+    display: flex;
+    align-items: baseline;
+}
+
+.fb__block_icon {
+    font-size: 0.8em;
+    padding-right: 0.5em;
+}
+
+.footer__bottom span:not(.fb__block_icon) {
+    color: #FCBF32;
+}

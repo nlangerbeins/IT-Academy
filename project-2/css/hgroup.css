@@ -1,0 +1,22 @@
+.hgroup__header {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    padding: 5em 0;
+}
+
+.hgroup__header > h3 {
+    font-size: 1.6em;
+    color: #FCBF32;
+    letter-spacing: 1px;
+    padding-bottom: 0.5em;
+    text-align: center;
+}
+
+.hgroup__header > h2 {
+    font-size: 4em;
+    color: #021126;
+    letter-spacing: 2px;
+    text-align: center;
+}

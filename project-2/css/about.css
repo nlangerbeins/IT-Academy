@@ -1,0 +1,59 @@
+.about {
+    display: flex;
+    width: 100%;
+    justify-content: space-between;
+}
+
+.about__img {
+    margin: 7% 2% 7% 6%;
+    width: 40%;
+}
+
+.about__img > img {
+    display: block;
+    width: 100%;
+}
+
+.about__block {
+    margin: 7% 6% 7% 0;
+    width: 60%;
+}
+
+.about__block hgroup > h3 {
+    font-size: 1.8em;
+    letter-spacing: 1px;
+    color: #FCBF32;
+    margin: 2em 0 0.5em;
+}
+
+.about__block hgroup > h2 {
+    font-size: 4em;
+    letter-spacing: 2px;
+    color: #021126;
+}
+
+.about__block_text {
+    font-size: 1.5em;
+    letter-spacing: 1px;
+    line-height: 1.5em;
+    color: #808080;
+}
+
+.about__block_text > p {
+    margin-top: 1em;
+}
+
+.about__block_bottom {
+    margin-top: 3em;
+}
+
+.about__block_button {
+    text-decoration: none;
+    font-size: 1.5em;
+    letter-spacing: 2px;
+    padding: 1em 1.7em;
+    color: #021126;
+    background-color: #FCBF32;
+    box-shadow: 5px 5px 2px rgba(0, 0, 0, 0.3);
+    text-shadow: 1px 1px 1px rgba(0, 0, 0, 0.3);
+}

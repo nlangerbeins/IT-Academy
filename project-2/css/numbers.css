@@ -1,0 +1,36 @@
+.numbers {
+    width: 100%;
+    display: flex;
+}
+
+.numbers__blue, .numbers__yellow {
+    width: 25%;
+    height: auto;
+    font-size: 1.5em;
+    text-transform: uppercase;
+    padding: 3em 2em;
+    display: flex;
+    align-items: stretch; 
+}
+
+.numbers__blue {
+    background-color: #021126;
+    color: #FCBF32;
+}
+
+.numbers__yellow {
+    background-color: #FCBF32;
+    color: #021126;
+}
+
+.numbers__block p:first-child {
+    font-size: 2em;
+    font-weight: bold;
+    padding-bottom: 0.3em;
+}  
+
+.numbers__icon {
+    font-size: 2.5em;
+    padding: 0.4em 0.4em 0 0;
+}
+
