@@ -1,0 +1,41 @@
+.video {
+    margin: 0 6%;
+    padding: 200px 0;
+}
+
+.video__circle1 {
+    display: flex;
+    margin: auto;
+    width: 8em;
+    height: 8em;
+    background-color: #f1cc73;
+    border-radius: 50%;
+}
+
+.video__circle1 a {
+    text-decoration: none;
+    display: flex;
+    margin: auto;
+}
+
+.video__circle2 {
+    display: flex;
+    margin: auto;
+    width: 6.5em;
+    height: 6.5em;
+    background-color: #FCBF32;
+    border-radius: 50%;
+}
+
+.video__circle2 .video__icon {
+    display: flex;
+    align-self: center;
+    margin-left: calc(50% - 0.1em);
+    font-size: 5em;
+    color: #021126;
+}
+
+.video:hover {
+    transform: scale(1.2, 1.2);
+    transition: transform 1s ease;
+}
