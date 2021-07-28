@@ -1,0 +1,55 @@
+.about_people {
+   display: flex;
+   flex-direction: column;
+   margin: 0 5vw;
+}
+
+.about_people__container {
+    width: 100%;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    margin-bottom: 5vw;
+}
+
+.about_people__container:last-child {
+    margin-bottom: 0vw;
+} 
+
+.about_people__block {
+    width: 23%;
+    position: relative;
+}
+
+.about_people__block:hover img {
+    opacity: 40%;
+}
+
+.about_people__header {
+    position: absolute;
+    width: 100%;
+    top: calc(50% - 1.25em); /* высота 1 строки (line-height) равна 1.25em. Wir haben 2 */
+    text-align: center;
+    color: #000;
+    visibility: hidden;  
+}
+
+.about_people__block:hover .about_people__header {
+    visibility: visible;
+}
+
+.about_people__block:hover {
+    transform: scale(1.1, 1.1);
+    transition: transform 1s ease;
+    cursor: url(/img/cursor/arrow_2.png), auto;
+}
+
+.about_people__header p:first-child {
+    font-family: 'mothervalight';
+    font-size: clamp(1.4em, 2vw, 1.5em);
+}
+
+.about_people__header p:last-child {
+    font-family: 'baskervilleitalic';
+    font-size: clamp(1em, 1.5vw, 1.2em);
+}

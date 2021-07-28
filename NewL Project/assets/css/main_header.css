@@ -1,0 +1,34 @@
+.main_header {
+    margin: 5vw 10vw;
+}
+
+.main_header h1 {
+    font-family: 'baskervilleitalic';
+    font-size: clamp(1.3em, 3vw, 2.5em);
+    margin-bottom: 0.5vw;
+}
+
+.main_header h2 {
+    font-family: 'cooper_hewittbold';
+    font-size: clamp(1.4em, 4vw, 3em);
+    margin-bottom: 2vw;
+    text-transform: uppercase;
+}
+
+.main_header p {
+    font-family: 'cooper_hewittlight';
+    font-size: clamp(1em, 1.4vw, 1.3em);
+    line-height: 1.5em;
+}
+
+.main_header p:first-of-type {
+    margin-bottom: 1.5vw;
+}
+
+.minor_header {
+    text-align: center;
+    margin: 5vw 10vw;
+    padding: 1vw;
+    font-family: 'cooper_hewittbold';
+    font-size: clamp(1.4em, 3vw, 2.5em);
+}
